@@ -13,10 +13,10 @@ import java.sql.SQLException;
 public class ConnexionUnique {
     private Connection connection;
     private static ConnexionUnique instance;
-    private static final String CONNECT_URL = "jdbc:mysql://mysql-alban.alwaysdata.net:3306/alban_data_base";
-    private static final String LOGIN = "alban" +
+    private static final String CONNECT_URL = "jdbc:mysql://mysql-jeremie.alwaysdata.net:3306/jeremie_passeratbd";
+    private static final String LOGIN = "user1" +
             "";
-    private static final String PASSWORD = "lemdpalban";
+    private static final String PASSWORD = "123";
     public  Connection getConnection() {return connection;}
     public static ConnexionUnique getInstance() {
         if(instance == null)
